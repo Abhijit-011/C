@@ -8,8 +8,12 @@ void rotate(int arr[], int n)
 	arr[0] = x;
 }
 
-int main()
-{
+void print(int arr[]){
+	for (i = 0; i < size; i++)
+		printf("%d ", arr[i]);
+}
+
+int main(){
 	int size, i;
 	printf("Enter Size : ");
 	scanf("%d", &size);
@@ -21,14 +25,12 @@ int main()
 	}
 
 	printf("Given array is\n");
-	for (i = 0; i < size; i++)
-		printf("%d ", arr[i]);
+	print(arr);
 
 	rotate(arr, size);
 
 	printf("\nRotated array is\n");
-	for (i = 0; i < size; i++)
-		printf("%d ", arr[i]);
+	print(arr);
 
 	return 0;
 }
